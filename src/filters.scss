@@ -1,3 +1,19 @@
+// Minimal token bridge for the standalone Filters export. The component
+// styling still consumes Arvo CSS variables at runtime.
+$arvo-space-4: 4px;
+$arvo-space-8: 8px;
+$arvo-space-12: 12px;
+$arvo-space-16: 16px;
+$arvo-space-24: 24px;
+$arvo-space-32: 32px;
+$arvo-space-40: 40px;
+$arvo-font-size-12: 12px;
+$arvo-regular: 400;
+$arvo-medium: 500;
+$arvo-border-1: 1px;
+$arvo-radius-16: 16px;
+$arvo-shadow-center: 0 8px 24px rgba(0, 0, 0, 0.12);
+
 .arvo-pg-filters {
   min-height: 0;
   flex: 1 1 auto;
@@ -252,3 +268,95 @@
 
   .arvo-tabs__tab {
     width: 100%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .arvo-tabs__tab-lbl {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.arvo-pg-smart-input__pane {
+  padding-top: $arvo-space-8;
+}
+
+.arvo-pg-smart-input__row2 {
+  margin-top: $arvo-space-12;
+}
+
+.arvo-pg-smart-input__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 140px) minmax(0, 1fr);
+  gap: 12px;
+  min-width: 0;
+  width: 100%;
+}
+
+.arvo-pg-smart-input__grid > * {
+  min-width: 0;
+}
+
+.arvo-pg-smart-input__subhead {
+  margin-bottom: $arvo-space-8;
+  font-size: $arvo-font-size-12;
+  font-weight: $arvo-regular;
+  color: var(--arvo-color-t-form-label);
+}
+
+.arvo-pg-smart-input__operator-host,
+.arvo-pg-smart-input__value-host {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.arvo-pg-smart-input__operator-host .arvo-sel,
+.arvo-pg-smart-input__value-host .arvo-dp {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.arvo-pg-smart-input__operator-host .arvo-sel__field,
+.arvo-pg-smart-input__value-host .arvo-dp__field {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.arvo-pg-smart-input__placeholder {
+  color: var(--arvo-color-t-secondary);
+}
+
+.arvo-pg-version2__empty {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: $arvo-space-12;
+  padding: clamp($arvo-space-24, 4vw, $arvo-space-40);
+  border: $arvo-border-1 solid var(--arvo-color-b-divider);
+  border-radius: $arvo-radius-16;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.9)),
+    radial-gradient(circle at top right, rgba(37, 99, 235, 0.1), transparent 36%),
+    var(--arvo-color-s-layer-01);
+  box-shadow: $arvo-shadow-center;
+}
+
+.arvo-pg-version2__eyebrow {
+  font-size: $arvo-font-size-12;
+  font-weight: $arvo-medium;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--arvo-color-t-secondary);
+}
+
+.arvo-pg-version2__title {
+  margin: 0;
+  font-size: clamp(28px, 3vw, 44px);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
