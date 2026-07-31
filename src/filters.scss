@@ -1,0 +1,254 @@
+.arvo-pg-filters {
+  min-height: 0;
+  flex: 1 1 auto;
+  display: grid;
+  place-items: start center;
+  padding: $arvo-space-24 $arvo-space-32 $arvo-space-32;
+  background: var(--arvo-color-s-layer-01);
+}
+
+.arvo-pg-filters__body {
+  width: min(100%, 980px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $arvo-space-16;
+}
+
+.arvo-pg-filters__header {
+  width: 100%;
+  display: grid;
+  justify-items: start;
+  gap: $arvo-space-8;
+  align-self: start;
+}
+
+.arvo-pg-filters__title-wrap {
+  width: 100%;
+  text-align: center;
+}
+
+.arvo-pg-filters__title {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.arvo-pg-filters__menu-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  gap: $arvo-space-4;
+}
+
+.arvo-pg-filters__menu-host {
+  display: inline-flex;
+  align-items: center;
+}
+
+.arvo-pg-filters__measure-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: $arvo-space-16;
+  align-items: stretch;
+}
+
+.arvo-pg-filters__measure-title {
+  width: 100%;
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: $arvo-medium;
+  color: var(--arvo-color-t-primary);
+  text-align: left;
+}
+
+.arvo-pg-filters__measure-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: $arvo-space-16;
+}
+
+.arvo-pg-filters__measure-item {
+  min-width: 0;
+}
+
+.arvo-pg-smart-input {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: $arvo-space-12;
+}
+
+.arvo-pg-smart-input__suggestion-anchor {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  pointer-events: none;
+}
+
+.arvo-pg-smart-input__label {
+  width: 100%;
+  font-size: $arvo-font-size-12;
+  font-weight: $arvo-regular;
+  text-align: left;
+  color: var(--arvo-color-t-form-label);
+}
+
+.arvo-pg-filters__expression {
+  display: flex;
+  gap: $arvo-space-8;
+  align-items: baseline;
+  min-height: 20px;
+  color: var(--arvo-color-t-form-label);
+}
+
+.arvo-pg-filters__expression-label {
+  font-weight: $arvo-medium;
+}
+
+.arvo-pg-filters__expression-value {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.arvo-pg-smart-input__field {
+  width: 100%;
+  min-width: 0;
+}
+
+.arvo-pg-smart-input__trigger {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  background: transparent;
+  padding: 0 $arvo-space-12;
+  margin: 0;
+  width: auto;
+  min-width: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--arvo-color-t-primary);
+}
+
+.arvo-pg-smart-input__trigger:focus,
+.arvo-pg-smart-input__trigger:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.arvo-pg-smart-input__trigger-ico {
+  pointer-events: none;
+  color: inherit;
+}
+
+.arvo-pg-filters__measure-item .arvo-pg-smart-input {
+  max-width: 100%;
+}
+
+.arvo-pg-smart-input__popover-host {
+  position: relative;
+}
+
+.arvo-pg-smart-input__panel {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.arvo-pg-smart-input__panel-body {
+  display: flex;
+  flex-direction: column;
+  gap: $arvo-space-16;
+  overflow-x: hidden;
+  overflow-y: visible;
+  width: 100%;
+  min-width: 0;
+}
+
+.arvo-pg-smart-input__add-value {
+  align-self: flex-start;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--arvo-color-b-theme-primary);
+  cursor: pointer;
+  font: inherit;
+  grid-column: 1;
+  justify-self: start;
+}
+
+.arvo-pg-smart-input__pane > .arvo-pg-smart-input__grid > .arvo-pg-smart-input__add-value {
+  grid-column: 1 !important;
+  justify-self: start;
+}
+
+.arvo-pg-smart-input__or-rows {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: $arvo-space-12;
+  margin-top: 0;
+}
+
+.arvo-pg-smart-input__pane--or-active > .arvo-pg-smart-input__grid {
+  grid-template-columns: 24px minmax(0, 140px) minmax(0, 1fr);
+}
+
+.arvo-pg-smart-input__pane--or-active > .arvo-pg-smart-input__grid > :first-child {
+  grid-column: 2;
+}
+
+.arvo-pg-smart-input__pane--or-active > .arvo-pg-smart-input__grid > :last-child {
+  grid-column: 3;
+}
+
+.arvo-pg-smart-input__or-separator {
+  color: var(--arvo-color-t-primary);
+  font-size: $arvo-font-size-12;
+  align-self: center;
+}
+
+.arvo-pg-smart-input__or-row {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 140px) minmax(0, 1fr);
+  gap: $arvo-space-12;
+  align-items: center;
+}
+
+.arvo-pg-smart-input__or-operator-host,
+.arvo-pg-smart-input__or-value-host {
+  min-width: 0;
+  width: 100%;
+}
+
+.arvo-pg-smart-input__tabstrip {
+  width: 100%;
+
+  .arvo-tabs__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: end;
+  }
+
+  .arvo-tabs__tab {
+    width: 100%;

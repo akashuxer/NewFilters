@@ -1,0 +1,14 @@
+{
+  "name": "new-filters",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@arvo/js": "^2.2.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
