@@ -1,0 +1,1 @@
+{"version":3,"file":"escape-handler.d.ts","sourceRoot":"","sources":["../../src/keyboard/escape-handler.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,aAAa;IAC5B,MAAM,EAAE,CAAC,OAAO,EAAE,WAAW,KAAK,IAAI,CAAC;IACvC,MAAM,EAAE,MAAM,IAAI,CAAC;CACpB;AAED,wBAAgB,mBAAmB,CAAC,QAAQ,EAAE,MAAM,IAAI,GAAG,aAAa,CA0BvE"}

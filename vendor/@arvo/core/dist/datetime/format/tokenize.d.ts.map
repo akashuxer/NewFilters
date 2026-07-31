@@ -1,0 +1,1 @@
+{"version":3,"file":"tokenize.d.ts","sourceRoot":"","sources":["../../../src/datetime/format/tokenize.ts"],"names":[],"mappings":"AAKA,OAAO,KAAK,EAAE,KAAK,EAAa,MAAM,UAAU,CAAC;AA6CjD;;;GAGG;AACH,wBAAgB,cAAc,CAAC,MAAM,EAAE,MAAM,GAAG,KAAK,EAAE,CAsCtD;AAmBD,2DAA2D;AAC3D,wBAAgB,aAAa,CAAC,MAAM,EAAE,MAAM,GAAG,OAAO,CAErD;AAED,6DAA6D;AAC7D,wBAAgB,aAAa,CAAC,MAAM,EAAE,MAAM,GAAG,OAAO,CAErD"}

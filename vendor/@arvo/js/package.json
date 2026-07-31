@@ -1,0 +1,1 @@
+{"name":"@arvo/js","version":"2.2.5","type":"module","main":"./dist/index.cjs","module":"./dist/index.js","types":"./dist/index.d.ts","dependencies":{"@arvo/core":"file:../core","@arvo/styles":"file:../styles","@arvo/tokens":"file:../tokens","@arvo/utils":"file:../utils"}}

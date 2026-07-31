@@ -1,0 +1,1 @@
+{"version":3,"file":"activation.d.ts","sourceRoot":"","sources":["../../src/keyboard/activation.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,iBAAiB;IAChC,aAAa,EAAE,CAAC,KAAK,EAAE,aAAa,KAAK,IAAI,CAAC;CAC/C;AAED,wBAAgB,uBAAuB,CACrC,QAAQ,EAAE,CAAC,KAAK,EAAE,aAAa,KAAK,IAAI,GACvC,iBAAiB,CASnB"}

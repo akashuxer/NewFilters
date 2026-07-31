@@ -8,7 +8,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@arvo/js": "^2.2.5"
+    "@arvo/js": "file:vendor/@arvo/js"
   },
   "devDependencies": {
     "typescript": "^5.5.0",

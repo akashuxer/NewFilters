@@ -1,0 +1,1 @@
+{"version":3,"file":"focusable.d.ts","sourceRoot":"","sources":["../../src/focus/focusable.ts"],"names":[],"mappings":"AA6BA,wBAAgB,WAAW,CAAC,OAAO,EAAE,WAAW,GAAG,OAAO,CAIzD;AAED,wBAAgB,oBAAoB,CAAC,SAAS,EAAE,WAAW,GAAG,WAAW,EAAE,CAI1E;AAED,wBAAgB,iBAAiB,CAC/B,SAAS,EAAE,WAAW,GACrB,WAAW,GAAG,IAAI,CAGpB;AAED,wBAAgB,gBAAgB,CAC9B,SAAS,EAAE,WAAW,GACrB,WAAW,GAAG,IAAI,CAGpB"}
